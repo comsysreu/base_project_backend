@@ -7,7 +7,8 @@ import { Reports } from './interface/reports.interface';
 
 @Controller('api/reports')
 export class ReportsController {
-    constructor(private readonly reportService: ReportsService) { }
+    // constructor(private readonly reportService: ReportsService) { }
+    constructor() { }
 
     @Get()
     async findAll(@Req() request) {

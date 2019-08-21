@@ -3,8 +3,8 @@ import { ReportsSchema } from './schema/reports.schema';
 
 export const reportsProviders = [
   {
-    provide: 'ReportsModelToken',
+    // provide: 'ReportsModelToken',
     useFactory: (connection: Connection) => connection.model('Reports', ReportsSchema),
-    inject: ['DbConnectionToken'],
+    // inject: ['DbConnectionToken'],
   },
 ];

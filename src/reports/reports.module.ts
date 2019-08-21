@@ -7,6 +7,6 @@ import {  reportsProviders} from './reports.provider';
 @Module({
   imports: [DatabaseModule],
   controllers: [ReportsController],
-  providers: [ReportsService ,... reportsProviders],
+  // providers: [ReportsService ,... reportsProviders],
 })
 export class ReportsModule {}

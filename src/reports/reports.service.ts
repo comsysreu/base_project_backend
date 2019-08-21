@@ -5,7 +5,8 @@ import { CreateReportsDto} from './dto/create-reports.dto';
 
 @Injectable()
 export class  ReportsService{
-  constructor(@Inject('ReportsModelToken') private readonly reportsModel: Model<Reports>) {}
+  constructor(private readonly reportsModel: Model<Reports>) {}
+  // constructor(@Inject('ReportsModelToken') private readonly reportsModel: Model<Reports>) {}
 
   async create(CreateReportsDto: CreateReportsDto): Promise<Reports> {
     const createReport = new this.reportsModel(CreateReportsDto);
