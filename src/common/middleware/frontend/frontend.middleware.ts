@@ -15,7 +15,7 @@ const allowedExt = [
   '.svg',
 ];
 
-const resolvePath = (file: string) => path.resolve(`../micro-reporting/dist/micro-reporting/${file}`);
+const resolvePath = (file: string) => path.resolve(`../front-directory/dist/front-directory/${file}`);
 
 export function frontend(req, res, next) {
     const { url } = req;
